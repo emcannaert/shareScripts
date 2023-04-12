@@ -21,21 +21,19 @@ def splitArgs(arg):    # for parsing options, haven't set this up yet
 
 def _ccuScanExt(self):        #does the CCU scanning and compares each scan to reference list
     #initialize environment to scanCCU
-    scannedCCUList = []    # this will be a list of all CCUs from all detectors (bpix=bpi,bpo,bmi,bmo, fpix=fpix_bp,fpix_bm) 
 
 
-    """
-
-    need to run each {run_bpi.sh,run_bpo.sh,run_bmi.sh,run_bmo.sh,run_fpix_bp.sh,run_fpix_bm.sh}
-    then need to find a way to input the command "scanCCU" in this mode
-    add the outputs of this to scannedCCUList
-
-
-    """
-    for det in ["fpix","bpix"]:
-        for 
     for iii in range(0,self.nScans):
+        scannedCCUList = []    # this will be a list of all CCUs from all detectors (bpix=bpi,bpo,bmi,bmo, fpix=fpix_bp,fpix_bm) 
+        
+        """
 
+        need to run each {run_bpi.sh,run_bpo.sh,run_bmi.sh,run_bmo.sh,run_fpix_bp.sh,run_fpix_bm.sh}
+        then need to find a way to input the command "scanCCU" in this mode
+        add the outputs of this to scannedCCUList
+
+
+        """
         #do scan to get refList
 
         if(len(scannedCCUList) = 0 ):
